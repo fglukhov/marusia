@@ -412,16 +412,12 @@ h5:first-child,
 
 header {
   z-index: 300;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   left: 0;
   background: #272A37;
   color: #fff; }
-
-.header-fixed {
-  position: fixed;
-  border-bottom: 2px solid #142664; }
 
 .header-logos {
   display: -ms-flexbox;
@@ -670,6 +666,9 @@ ul.navbar-nav a.active {
 .stage-tmb-ico {
   margin: 0 0 22px 0; }
 
+.stage-tmb-ico img {
+  display: inline-block; }
+
 .stage-tmb-num {
   font-weight: 600;
   font-size: 32px;
@@ -901,7 +900,7 @@ ul.navbar-nav a.active {
   margin-left: -1px;
   background: #272A37; }
 
-.faq-item.active .faq-item-arrow {
+.faq-item-arrow.active {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
 
@@ -1319,6 +1318,10 @@ ul.footer-menu a:hover {
     -webkit-transform: scale(1);
     transform: scale(1); }
   ul.navbar-nav a:hover {
+    background: radial-gradient(at 113.54% 94.76%, #CAFFF5 0%, #A0FFFF 44.27%, #205EFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .footer-bottom a:hover {
     background: radial-gradient(at 113.54% 94.76%, #CAFFF5 0%, #A0FFFF 44.27%, #205EFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; } }
@@ -2736,7 +2739,16 @@ ul.footer-menu a:hover {
   header .header-logos {
     margin: -2px -15px 2px 0; }
   .navbar-wrapper-inner {
-    padding: 22px 20px 20px 20px; } }
+    padding: 22px 20px 20px 20px; }
+  .link-arrow {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    right: 25px;
+    bottom: 25px; }
+  .link-arrow:after {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5); } }
 
 @media (max-width: 767px) {
   .anim,

@@ -181,11 +181,15 @@ $(document).ready(function() {
 			var faqItemActive = $(".faq-item.active"),
 				faqItemCur = $(this).closest(".faq-item");
 
+			faqItemActive.find(".faq-item-arrow").removeClass("active");
+
 			faqItemActive.find(".faq-item-content").slideUp("250", function () {
 
 				faqItemActive.removeClass("active");
 
 			});
+
+			faqItemCur.find(".faq-item-arrow").addClass("active");
 
 			faqItemCur.find(".faq-item-content").slideDown("250", function () {
 
@@ -198,6 +202,9 @@ $(document).ready(function() {
 		} else {
 
 			var faqItemCur = $(this).closest(".faq-item");
+
+			faqItemCur.find(".faq-item-arrow").removeClass("active");
+
 
 			faqItemCur.find(".faq-item-content").slideUp("250", function () {
 
