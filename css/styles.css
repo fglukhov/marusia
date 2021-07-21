@@ -594,7 +594,8 @@ ul.navbar-nav a.active {
 
 .section-champ-obj {
   left: 0;
-  top: -850px; }
+  top: -850px;
+  width: 866px; }
 
 .section-stages {
   margin-top: 267px; }
