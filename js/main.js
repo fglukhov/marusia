@@ -138,7 +138,7 @@ $(document).ready(function() {
 
 	// Countdown
 
-	var endDate = new Date(2021, 8, 7, 0, 0, 0, 0);
+	var endDate = new Date(2021, 7, 17, 0, 0, 0, 0);
 
 	$(".countdown").each(function() {
 		$(this).countdown({
